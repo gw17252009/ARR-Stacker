@@ -17,16 +17,16 @@ I have listed the apps and their websites as well as docker hub pages w/ some ex
 
 Bazarr: https://www.bazarr.media/  Subtitle Management  https://hub.docker.com/r/linuxserver/bazarr <br>
 Lidarr: https://lidarr.audio/  Music Management  https://hub.docker.com/r/linuxserver/lidarr <br>
-Radarr: https://radarr.video/  Movie Management  https://hub.docker.com/r/linuxserver/radarr
-Sonarr: https://sonarr.tv/  TV Series Management  https://hub.docker.com/r/linuxserver/sonarr
-Readarr: https://readarr.com/  EBook Management  https://hub.docker.com/r/linuxserver/readarr
-Prowlarr: https://prowlarr.com/  Indexer Management (torrents and usenet)  https://hub.docker.com/r/linuxserver/prowlarr
-Overseerr: https://overseerr.dev/  Media Requester for Plex  https://hub.docker.com/r/sctx/overseerr
-Transmission: https://transmissionbt.com/  Bittorrent Client w/OpenVPN  https://github.com/haugene/docker-transmission-openvpn
-Caddy: https://caddyserver.com/  Caddy Reverse Proxy using labels  https://github.com/lucaslorentz/caddy-docker-proxy
-Flaresolverr: https://github.com/flaresolverr/FlareSolverr/pkgs/container/flaresolverr  FlareSolverr is a proxy server to bypass Cloudflare and DDoS-GUARD protection.
-Watchtower: https://github.com/containrrr/watchtower  Docker Container/image updater
-Unpackerr: https://github.com/Unpackerr/unpackerr RAR and ZIP file unpacker
+Radarr: https://radarr.video/  Movie Management  https://hub.docker.com/r/linuxserver/radarr <br>
+Sonarr: https://sonarr.tv/  TV Series Management  https://hub.docker.com/r/linuxserver/sonarr <br>
+Readarr: https://readarr.com/  EBook Management  https://hub.docker.com/r/linuxserver/readarr <br>
+Prowlarr: https://prowlarr.com/  Indexer Management (torrents and usenet)  https://hub.docker.com/r/linuxserver/prowlarr <br>
+Overseerr: https://overseerr.dev/  Media Requester for Plex  https://hub.docker.com/r/sctx/overseerr <br>
+Transmission: https://transmissionbt.com/  Bittorrent Client w/OpenVPN  https://github.com/haugene/docker-transmission-openvpn <br>
+Caddy: https://caddyserver.com/  Caddy Reverse Proxy using labels  https://github.com/lucaslorentz/caddy-docker-proxy <br>
+Flaresolverr: https://github.com/flaresolverr/FlareSolverr/pkgs/container/flaresolverr  FlareSolverr is a proxy server to bypass Cloudflare and DDoS-GUARD protection. <br>
+Watchtower: https://github.com/containrrr/watchtower  Docker Container/image updater <br>
+Unpackerr: https://github.com/Unpackerr/unpackerr RAR and ZIP file unpacker <br>
 
 You must have Docker and Docker Compose installed. For info check docker.com
     https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04
