@@ -15,8 +15,8 @@ There is a .env file that needs modifying to your use case. this file goes in th
 
 I have listed the apps and their websites as well as docker hub pages w/ some exceptions:
 
-Bazarr: https://www.bazarr.media/  Subtitle Management  https://hub.docker.com/r/linuxserver/bazarr
-Lidarr: https://lidarr.audio/  Music Management  https://hub.docker.com/r/linuxserver/lidarr
+Bazarr: https://www.bazarr.media/  Subtitle Management  https://hub.docker.com/r/linuxserver/bazarr <br>
+Lidarr: https://lidarr.audio/  Music Management  https://hub.docker.com/r/linuxserver/lidarr <br>
 Radarr: https://radarr.video/  Movie Management  https://hub.docker.com/r/linuxserver/radarr
 Sonarr: https://sonarr.tv/  TV Series Management  https://hub.docker.com/r/linuxserver/sonarr
 Readarr: https://readarr.com/  EBook Management  https://hub.docker.com/r/linuxserver/readarr
