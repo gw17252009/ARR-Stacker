@@ -286,6 +286,3 @@ services:
     volumes:
       - "<path/for/config>/unpackerr:/config"
       - "<path/for/downloads>:/data/torrents"
-
-volumes:
-  caddy_data: {}
