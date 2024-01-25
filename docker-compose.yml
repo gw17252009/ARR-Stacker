@@ -15,8 +15,6 @@ services:
       <<: *default
       CADDY_INGRESS_NETWORKS: caddy
     image: lucaslorentz/caddy-docker-proxy:ci-alpine
-    labels:
-      com.centurylinklabs.watchtower.enable: "true"
     networks:
       - caddy
     ports:
@@ -37,7 +35,6 @@ services:
     labels:
       caddy: bazarr.$DOMAIN
       caddy.reverse_proxy: "{{upstreams 6767}}"
-      com.centurylinklabs.watchtower.enable: "true"
     networks:
       - caddy
     ports:
@@ -57,7 +54,6 @@ services:
     labels:
       caddy: lidarr.$DOMAIN
       caddy.reverse_proxy: "{{upstreams 8686}}"
-      com.centurylinklabs.watchtower.enable: "true"
     networks:
       - caddy
     ports:
@@ -77,7 +73,6 @@ services:
     labels:
       caddy: overseerr.$DOMAIN
       caddy.reverse_proxy: "{{upstreams 5055}}"
-      com.centurylinklabs.watchtower.enable: "true"
     networks:
       - caddy
     ports:
@@ -96,7 +91,6 @@ services:
     labels:
       caddy: prowlarr.$DOMAIN
       caddy.reverse_proxy: "{{upstreams 9696}}"
-      com.centurylinklabs.watchtower.enable: "true"
     networks:
       - caddy
     ports:
@@ -110,8 +104,6 @@ services:
       - LOG_LEVEL=info
       - TZ=$TZ
     image: ghcr.io/flaresolverr/flaresolverr:latest
-    labels:
-      com.centurylinklabs.watchtower.enable: "true"
     networks:
       - caddy
     ports:
@@ -128,7 +120,6 @@ services:
     labels:
       caddy: radarr.$DOMAIN
       caddy.reverse_proxy: "{{upstreams 7878}}"
-      com.centurylinklabs.watchtower.enable: "true"
     networks:
       - caddy
     ports:
@@ -150,7 +141,6 @@ services:
     labels:
       caddy: readarr.$DOMAIN
       caddy.reverse_proxy: "{{upstreams 8787}}"
-      com.centurylinklabs.watchtower.enable: "true"
     networks:
       - caddy
     ports:
@@ -171,7 +161,6 @@ services:
     labels:
       caddy: sonarr.$DOMAIN
       caddy.reverse_proxy: "{{upstreams 8989}}"
-      com.centurylinklabs.watchtower.enable: "true"
     networks:
       - caddy
     ports:
@@ -190,10 +179,7 @@ services:
       WATCHTOWER_REMOVE_VOLUMES: false
       WATCHTOWER_INCLUDE_STOPPED: true
       WATCHTOWER_POLL_INTERVAL: 53200
-      WATCHTOWER_LABEL_ENABLE: true
     image: containrrr/watchtower
-    labels:
-      com.centurylinklabs.watchtower.enable: "true"
     networks:
       - caddy
     restart: unless-stopped
@@ -227,7 +213,6 @@ services:
     labels:
       caddy: transmission.$DOMAIN
       caddy.reverse_proxy: "{{upstreams 9091}}"
-      com.centurylinklabs.watchtower.enable: "true"
     logging:
       driver: json-file
       options:
@@ -290,8 +275,6 @@ services:
       UN_READARR_0_DELETE_ORIG: false
       UN_READARR_0_DELETE_DELAY: 5m      
     image: golift/unpackerr
-    labels:
-      com.centurylinklabs.watchtower.enable: "true"
     networks:
       - caddy
     restart: always
