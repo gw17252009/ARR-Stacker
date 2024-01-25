@@ -14,6 +14,8 @@ services:
     environment:
       <<: *default
       CADDY_INGRESS_NETWORKS: caddy
+    extra_hosts:
+      - host.docker.internal:host-gateway
     image: lucaslorentz/caddy-docker-proxy:ci-alpine
     networks:
       - caddy
